@@ -19,6 +19,29 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       btn.parentElement.style.display = 'none';
       skillButtons.forEach(b => b.classList.remove('active-skill'));
+      projectButtons.forEach(b => b.classList.remove('active-project'));
+    });
+  });
+
+  // ===== ACCORDÉON PROJETS =====
+  const projectButtons = document.querySelectorAll('.project-btn');
+  const projectDetails = document.querySelectorAll('.project-detail');
+
+  projectButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const project = btn.getAttribute('data-project');
+      projectDetails.forEach(detail => detail.style.display = 'none');
+      document.getElementById(project).style.display = 'block';
+      projectButtons.forEach(b => b.classList.remove('active-project'));
+      btn.classList.add('active-project');
+    });
+  });
+
+  const projectCloseBtns = document.querySelectorAll('.project-detail .close-btn');
+  projectCloseBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.parentElement.style.display = 'none';
+      projectButtons.forEach(b => b.classList.remove('active-project'));
     });
   });
 
