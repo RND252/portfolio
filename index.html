@@ -45,7 +45,6 @@
     <div class="container">
       <h2>Mes Compétences</h2>
 
-      <!-- Boutons compétences -->
       <div class="skills-buttons">
         <button class="skill-btn" data-skill="reseaux">Réseaux</button>
         <button class="skill-btn" data-skill="developpement">Développement</button>
@@ -53,7 +52,6 @@
         <button class="skill-btn" data-skill="securite">Sécurité informatique</button>
       </div>
 
-      <!-- Blocs détaillés -->
       <div class="skills-details">
 
         <!-- Réseaux -->
@@ -112,54 +110,51 @@
     </div>
   </section>
 
- <!-- PROJETS -->
-<section id="projects" class="section reveal">
-  <div class="container">
-    <h2>Projets</h2>
-    <div class="projects-buttons">
+  <!-- PROJETS -->
+  <section id="projects" class="section reveal">
+    <div class="container">
+      <h2>Projets</h2>
 
-      <button class="project-btn" data-project="proj1">Projet 1</button>
-      <button class="project-btn" data-project="proj2">Projet 2</button>
-      <button class="project-btn" data-project="proj3">Projet 3</button>
-      <button class="project-btn" data-project="proj4">Projet 4</button>
+      <div class="projects-buttons">
+        <button class="project-btn" data-project="proj1">Projet 1</button>
+        <button class="project-btn" data-project="proj2">Projet 2</button>
+        <button class="project-btn" data-project="proj3">Projet 3</button>
+        <button class="project-btn" data-project="proj4">Projet 4</button>
+      </div>
 
+      <div class="projects-details">
+
+        <div id="proj1" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 1</h3>
+          <p>Description détaillée du projet 1.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+
+        <div id="proj2" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 2</h3>
+          <p>Description détaillée du projet 2.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+
+        <div id="proj3" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 3</h3>
+          <p>Description détaillée du projet 3.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+
+        <div id="proj4" class="project-detail">
+          <button class="close-btn">X</button>
+          <h3>Projet 4</h3>
+          <p>Description détaillée du projet 4.</p>
+          <a href="#" target="_blank">Voir le projet</a>
+        </div>
+
+      </div>
     </div>
-
-    <!-- Détails des projets -->
-    <div class="projects-details">
-
-      <div id="proj1" class="project-detail">
-        <button class="close-btn">X</button>
-        <h3>Projet 1</h3>
-        <p>Description détaillée du projet 1.</p>
-        <a href="#" target="_blank">Voir le projet</a>
-      </div>
-
-      <div id="proj2" class="project-detail">
-        <button class="close-btn">X</button>
-        <h3>Projet 2</h3>
-        <p>Description détaillée du projet 2.</p>
-        <a href="#" target="_blank">Voir le projet</a>
-      </div>
-
-      <div id="proj3" class="project-detail">
-        <button class="close-btn">X</button>
-        <h3>Projet 3</h3>
-        <p>Description détaillée du projet 3.</p>
-        <a href="#" target="_blank">Voir le projet</a>
-      </div>
-
-      <div id="proj4" class="project-detail">
-        <button class="close-btn">X</button>
-        <h3>Projet 4</h3>
-        <p>Description détaillée du projet 4.</p>
-        <a href="#" target="_blank">Voir le projet</a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section reveal">
@@ -182,7 +177,7 @@
   <!-- SCRIPT JS -->
   <script src="script.js"></script>
   <script>
-    // ================= ANIMATION AU SCROLL =================
+    // Scroll reveal simple
     const reveals = document.querySelectorAll('.reveal');
     window.addEventListener('scroll', () => {
       for (let i = 0; i < reveals.length; i++) {
