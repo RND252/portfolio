@@ -9,8 +9,8 @@
 <body>
 
 <header id="home">
-    <nav class="navbar">
-        <ul>
+    <nav>
+        <ul class="menu">
             <li><a href="#home">Accueil</a></li>
             <li><a href="#about">À propos</a></li>
             <li><a href="#skills">Compétences</a></li>
@@ -21,54 +21,60 @@
 
     <div class="hero">
         <h1>Eren Dogan</h1>
-        <h2>Étudiant en Réseaux & Télécoms</h2>
-        <p>Passionné par la technologie, les réseaux et la cybersécurité.</p>
-        <a href="#contact" class="btn main-btn">Contactez-moi</a>
+        <p class="subtitle">Étudiant passionné par les réseaux & la cybersécurité</p>
+
+        <div class="hero-buttons">
+            <a href="#about" class="btn">À propos</a>
+            <a href="#contact" class="btn">Contact</a>
+        </div>
     </div>
 </header>
 
-<section id="about" class="section">
+<section id="about">
     <h2>À propos</h2>
-    <p>Présente ton parcours ici — tes études, ce qui t’intéresse, tes objectifs.</p>
+    <p>Je suis étudiant en BTS Réseaux & Télécoms, passionné d’informatique, de sécurité des systèmes et des réseaux. Je suis motivé, curieux et toujours prêt à apprendre de nouvelles technologies.</p>
 </section>
 
-<section id="skills" class="section">
+<section id="skills">
     <h2>Compétences</h2>
-    <ul class="skills-list">
-        <li>Administration Systèmes & Réseaux</li>
-        <li>Linux & Windows Server</li>
-        <li>Virtualisation & Cloud</li>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Sécurité Informatique</li>
-    </ul>
+    <div class="skills-list">
+        <span>Administration Réseau</span>
+        <span>Linux</span>
+        <span>Windows Server</span>
+        <span>HTML & CSS</span>
+        <span>JavaScript</span>
+        <span>CyberSécurité</span>
+    </div>
 </section>
 
-<section id="projects" class="section">
+<section id="projects">
     <h2>Projets</h2>
     <div class="projects-container">
-        <div class="project">
+        <div class="project-card">
             <h3>Projet 1</h3>
-            <p>Description du projet.</p>
+            <p>Description du projet 1.</p>
         </div>
-        <div class="project">
+        <div class="project-card">
             <h3>Projet 2</h3>
-            <p>Description du projet.</p>
+            <p>Description du projet 2.</p>
         </div>
-        <div class="project">
+        <div class="project-card">
             <h3>Projet 3</h3>
-            <p>Description du projet.</p>
+            <p>Description du projet 3.</p>
         </div>
     </div>
 </section>
 
-<section id="contact" class="section">
+<section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:eren.dogan@example.com">eren.dogan@example.com</a></p>
+    <p>Email : <a href="mailto:eren.dogan@example.com">eren.dogan@example.com</a></p>
+    <p>Liens : GitHub • LinkedIn • Autres</p>
 </section>
 
 <footer>
     <p>© 2026 Eren Dogan</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
