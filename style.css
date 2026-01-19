@@ -255,6 +255,33 @@ body {
     opacity: 0.85;
 }
 
+.project-figures {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-figures figure {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.project-figures img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.project-figures figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
 /* ================= CONTACT ================= */
 .contact form {
     display: flex;
