@@ -3,166 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eren Dogan | Portfolio</title>
+    <title>Eren Dogan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- NAVBAR CENTRÉE -->
-<nav class="navbar">
-    <ul class="nav-menu">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
-<!-- HERO / ACCUEIL -->
-<section id="home" class="hero">
-    <div class="container">
-        <h1>Eren Dogan</h1>
-        <p class="subtitle">Étudiant en Réseaux & Cybersécurité</p>
-        <p class="description">Passionné par la technologie et la sécurité informatique, je crée des projets et développe mes compétences chaque jour.</p>
-
-        <!-- BOUTONS -->
-        <div class="hero-buttons">
-            <a href="#about" class="btn primary">À propos</a>
-            <a href="#contact" class="btn secondary">Contact</a>
-            <a href="cv.pdf" class="btn cv" target="_blank">Télécharger CV</a>
-        </div>
-    </div>
-</section>
-
-<!-- À PROPOS -->
-<section id="about" class="section reveal">
-    <div class="container">
-        <h2>À propos</h2>
-        <p>
-            Je suis Eren Dogan, étudiant passionné par les réseaux et la cybersécurité. Je travaille sur différents projets et je continue d’apprendre pour améliorer mes compétences techniques.
-        </p>
-    </div>
-</section>
-
-<!-- COMPÉTENCES -->
-<section id="skills" class="section reveal">
-  <div class="container">
-    <h2>Mes Compétences</h2>
-
-    <!-- Boutons des compétences -->
-    <div class="skills-buttons">
-      <button class="skill-btn" data-skill="reseaux">Réseaux</button>
-      <button class="skill-btn" data-skill="developpement">Développement</button>
-      <button class="skill-btn" data-skill="telephonie">Téléphonie IP</button>
-      <button class="skill-btn" data-skill="securite">Sécurité informatique</button>
-    </div>
-
-    <!-- Blocs détaillés (accordéons) -->
-    <div class="skills-details">
-
-      <!-- Réseaux -->
-      <div id="reseaux" class="skill-detail">
-        <button class="close-btn">X</button>
-        <h3>Réseaux</h3>
-        <h4>Routeurs</h4>
-        <ul>
-          <li>OSPF, BGP, IPv4/IPv6, MPLS, HSRP</li>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <h4>Switches</h4>
-        <ul>
-          <li>VLAN, HSRP, Routage Inter-VLAN, VTP</li>
-        </ul>
-        <h4>Virtualisation</h4>
-        <ul>
-          <li>Proxmox, VMware ESXi, Hyper-V, VirtualBox</li>
-        </ul>
-        <h4>Supervision</h4>
-        <ul>
-          <li>Nagios</li>
-        </ul>
-      </div>
+    </nav>
 
-      <!-- Développement -->
-      <div id="developpement" class="skill-detail">
-        <button class="close-btn">X</button>
-        <h3>Développement</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript : sites statiques et dynamiques</li>
-          <li>Java : mini applications (chat)</li>
-          <li>C++ : robot Arduino, scripts Rubber Ducky</li>
-          <li>Windev : logiciel de gestion de stock</li>
-          <li>WordPress : sites vitrines</li>
-          <li>PowerShell/Shell : scripts pour administration</li>
-        </ul>
-      </div>
-
-      <!-- Téléphonie IP -->
-      <div id="telephonie" class="skill-detail">
-        <button class="close-btn">X</button>
-        <h3>Téléphonie IP</h3>
-        <ul>
-          <li>Serveurs PBX : Asterisk, 3CX</li>
-          <li>Clients VoIP : Linphone</li>
-          <li>Réseaux cellulaires : 1G, GSM, UMTS, 4G LTE, 5G, fibre/cuivre</li>
-        </ul>
-      </div>
-
-      <!-- Sécurité informatique -->
-      <div id="securite" class="skill-detail">
-        <button class="close-btn">X</button>
-        <h3>Sécurité informatique</h3>
-        <ul>
-          <li>Red Team : CTF, HackTheBox, TryHackMe, hackathons SecuRT</li>
-          <li>Blue Team : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
-          <li>IDS/IPS : Suricata, Snort, Zeek</li>
-          <li>SIEM : Graylog</li>
-          <li>Firewalls : pfSense, iptables, Stormshield</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-<!-- PROJETS -->
-<section id="projects" class="section reveal">
-    <div class="container">
-        <h2>Projets</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Projet 1</h3>
-                <p>Description du projet 1.</p>
-            </div>
-            <div class="card">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2.</p>
-            </div>
-            <div class="card">
-                <h3>Projet 3</h3>
-                <p>Description du projet 3.</p>
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero reveal">
+        <div class="container">
+            <h1>Eren Dogan</h1>
+            <p class="subtitle">Développeur & Ingénieur Réseau</p>
+            <p class="description">Bienvenue sur mon portfolio. Découvrez mes compétences, mes projets et comment me contacter.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary">Me Contacter</a>
+                <a href="CV.pdf" target="_blank" class="btn cv">Télécharger CV</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section reveal">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:eren.dogan@example.com">eren.dogan@example.com</a></p>
-        <p>GitHub : <a href="https://github.com/RND252" target="_blank">RND252</a></p>
-        <p>LinkedIn : <a href="#" target="_blank">Lien LinkedIn</a></p>
-    </div>
-</section>
+    <!-- ========== À PROPOS ========== -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <h2>À propos</h2>
+            <p>Bonjour, je suis Eren Dogan, passionné par le développement web, les réseaux et la sécurité informatique. Je crée des projets innovants et je mets mes compétences au service de solutions fiables et modernes.</p>
+        </div>
+    </section>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Eren Dogan</p>
-</footer>
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="skills" class="section reveal">
+        <div class="container">
+            <h2>Mes Compétences</h2>
 
-<script src="script.js"></script>
+            <!-- Boutons des compétences -->
+            <div class="skills-buttons">
+                <button class="skill-btn" data-skill="reseaux">Réseaux</button>
+                <button class="skill-btn" data-skill="developpement">Développement</button>
+                <button class="skill-btn" data-skill="telephonie">Téléphonie IP</button>
+                <button class="skill-btn" data-skill="securite">Sécurité informatique</button>
+            </div>
+
+            <!-- Blocs détaillés (accordéons) -->
+            <div class="skills-details">
+
+                <!-- Réseaux -->
+                <div id="reseaux" class="skill-detail">
+                    <button class="close-btn">X</button>
+                    <h3>Réseaux</h3>
+                    <h4>Routeurs</h4>
+                    <ul>
+                        <li>OSPF, BGP, IPv4/IPv6, MPLS, HSRP</li>
+                    </ul>
+                    <h4>Switches</h4>
+                    <ul>
+                        <li>VLAN, HSRP, Routage Inter-VLAN, VTP</li>
+                    </ul>
+                    <h4>Virtualisation</h4>
+                    <ul>
+                        <li>Proxmox, VMware ESXi, Hyper-V, VirtualBox</li>
+                    </ul>
+                    <h4>Supervision</h4>
+                    <ul>
+                        <li>Nagios</li>
+                    </ul>
+                </div>
+
+                <!-- Développement -->
+                <div id="developpement" class="skill-detail">
+                    <button class="close-btn">X</button>
+                    <h3>Développement</h3>
+                    <ul>
+                        <li>HTML, CSS, JavaScript : sites statiques et dynamiques</li>
+                        <li>Java : mini applications (chat)</li>
+                        <li>C++ : robot Arduino, scripts Rubber Ducky</li>
+                        <li>Windev : logiciel de gestion de stock</li>
+                        <li>WordPress : sites vitrines</li>
+                        <li>PowerShell/Shell : scripts pour administration</li>
+                    </ul>
+                </div>
+
+                <!-- Téléphonie IP -->
+                <div id="telephonie" class="skill-detail">
+                    <button class="close-btn">X</button>
+                    <h3>Téléphonie IP</h3>
+                    <ul>
+                        <li>Serveurs PBX : Asterisk, 3CX</li>
+                        <li>Clients VoIP : Linphone</li>
+                        <li>Réseaux cellulaires : 1G, GSM, UMTS, 4G LTE, 5G, fibre/cuivre</li>
+                    </ul>
+                </div>
+
+                <!-- Sécurité informatique -->
+                <div id="securite" class="skill-detail">
+                    <button class="close-btn">X</button>
+                    <h3>Sécurité informatique</h3>
+                    <ul>
+                        <li>Red Team : CTF, HackTheBox, TryHackMe, hackathons SecuRT</li>
+                        <li>Blue Team : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
+                        <li>IDS/IPS : Suricata, Snort, Zeek</li>
+                        <li>SIEM : Graylog</li>
+                        <li>Firewalls : pfSense, iptables, Stormshield</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projects" class="section reveal">
+        <div class="container">
+            <h2>Projets</h2>
+            <div class="projects">
+                <!-- Exemple de projet -->
+                <div class="card">
+                    <h3>Projet 1</h3>
+                    <p>Brève description du projet.</p>
+                </div>
+                <div class="card">
+                    <h3>Projet 2</h3>
+                    <p>Brève description du projet.</p>
+                </div>
+                <div class="card">
+                    <h3>Projet 3</h3>
+                    <p>Brève description du projet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section reveal">
+        <div class="container contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Nom" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>&copy; 2026 Eren Dogan - Portfolio</p>
+    </footer>
+
+    <!-- ========== SCRIPT JS ========== -->
+    <script src="script.js"></script>
+    <script>
+    // Scroll reveal simple
+    const reveals = document.querySelectorAll('.reveal');
+    window.addEventListener('scroll', () => {
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const revealTop = reveals[i].getBoundingClientRect().top;
+            const revealPoint = 150;
+            if(revealTop < windowHeight - revealPoint){
+                reveals[i].classList.add('active');
+            } else {
+                reveals[i].classList.remove('active');
+            }
+        }
+    });
+    </script>
 </body>
 </html>
