@@ -1,10 +1,18 @@
-const reveals = document.querySelectorAll('.reveal');
+const skillButtons = document.querySelectorAll('.skill-btn');
+const skillDetails = document.querySelectorAll('.skill-detail');
 
-window.addEventListener('scroll', () => {
-    reveals.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < window.innerHeight * 0.85) {
-            el.classList.add('active');
-        }
-    });
+skillButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const skill = btn.getAttribute('data-skill');
+
+    // Masquer tous les détails
+    skillDetails.forEach(detail => detail.style.display = 'none');
+
+    // Afficher le détail correspondant
+    document.getElementById(skill).style.display = 'block';
+
+    // Mettre le bouton actif
+    skillButtons.forEach(b => b.classList.remove('active-skill'));
+    btn.classList.add('active-skill');
+  });
 });
