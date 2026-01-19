@@ -1,15 +1,10 @@
-// simple fade-in au scroll
-const sections = document.querySelectorAll('section');
+const reveals = document.querySelectorAll(".reveal");
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.3 });
-
-sections.forEach(section => {
-  section.classList.add('hidden');
-  observer.observe(section);
+window.addEventListener("scroll", () => {
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.85) {
+            el.classList.add("active");
+        }
+    });
 });
