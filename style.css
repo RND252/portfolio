@@ -1,18 +1,20 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Arial', sans-serif;
     color: #222;
     background: #fefefe;
     scroll-behavior: smooth;
-    padding-top: 70px;
+    padding-top: 70px; /* Pour navbar fixe */
 }
 
-/* NAVBAR */
+/* NAVBAR CENTRÉE */
 .navbar {
     position: fixed;
     top: 0;
@@ -40,7 +42,7 @@ body {
     color: #00aaff;
 }
 
-/* HERO */
+/* HERO / ACCUEIL */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -116,18 +118,59 @@ body {
     margin-bottom: 25px;
 }
 
-/* SKILLS */
-.skills-list {
+/* À PROPOS */
+.section p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* COMPÉTENCES */
+.skills-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    margin-bottom: 25px;
 }
 
-.skills-list .skill span {
-    background: #e6f4ff;
-    padding: 10px 16px;
-    border-radius: 22px;
+.skill-btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: 2px solid #00aaff;
+    background: white;
+    color: #004f99;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.skill-btn:hover, .skill-btn.active-skill {
+    background: #00aaff;
+    color: white;
+}
+
+.skills-details {
+    max-width: 700px;
+    margin: auto;
+    text-align: left;
+}
+
+.skill-detail {
+    display: none;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.skill-detail h3 {
+    margin-bottom: 10px;
+    color: #00aaff;
+}
+
+.skill-detail h4 {
+    margin-top: 10px;
+    color: #004f99;
 }
 
 /* PROJETS */
@@ -141,6 +184,12 @@ body {
     padding: 22px;
     border-radius: 12px;
     text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
