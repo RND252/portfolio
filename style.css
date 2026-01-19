@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -6,115 +6,124 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f6f6f6;
-    color: #111;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
 }
 
-/* ===== NAV ===== */
-.navbar {
+/* NAVIGATION */
+nav {
+    background: #0f0f0f;
+    padding: 15px 40px;
+}
+
+.menu {
+    list-style: none;
     display: flex;
+    gap: 25px;
     justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    background: #222;
 }
 
-.navbar a {
+.menu a {
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
 }
-
-.navbar a:hover {
+.menu a:hover {
     color: #00aaff;
 }
 
-/* ===== ACCUEIL ===== */
-header {
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #00aaff, #004f99);
+    color: white;
     text-align: center;
-    padding: 100px 20px;
-    background-image: url('background.jpg'); /* tu peux changer */
-    background-size: cover;
-    background-position: center;
+    padding-top: 120px;
 }
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
 }
 
-.hero h2 {
-    font-size: 1.8rem;
-    color: #555;
-    margin-bottom: 15px;
+.subtitle {
+    font-size: 1.4rem;
+    margin: 10px 0;
 }
 
-.hero p {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.btn.main-btn {
-    padding: 12px 30px;
-    background: #00aaff;
-    color: #fff;
-    border-radius: 30px;
+.hero-buttons .btn {
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 10px 22px;
+    background: white;
+    color: #004f99;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-/* ===== SECTIONS ===== */
-.section {
-    padding: 80px 40px;
+.hero-buttons .btn:hover {
+    background: #e0e0e0;
+}
+
+/* SECTIONS */
+section {
+    padding: 70px 40px;
     text-align: center;
 }
 
-.section h2 {
+h2 {
     font-size: 2.2rem;
-    margin-bottom: 20px;
     color: #00aaff;
+    margin-bottom: 18px;
 }
 
-/* ===== COMPÉTENCES ===== */
+/* SKILLS */
 .skills-list {
-    list-style: none;
-    max-width: 600px;
-    margin: auto;
-}
-
-.skills-list li {
-    background: #dfefff;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 8px;
-}
-
-/* ===== PROJETS ===== */
-.projects-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    gap: 15px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.project {
-    background: #fff;
+.skills-list span {
+    background: #dceeff;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+
+/* PROJECTS */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+    padding-top: 12px;
+}
+
+.project-card {
+    background: #fafafa;
     padding: 20px;
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s ease;
 }
 
-.project h3 {
-    margin-bottom: 10px;
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
 }
 
-/* ===== FOOTER ===== */
+/* CONTACT */
+#contact a {
+    color: #004f99;
+    text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
-    padding: 20px;
-    background: #222;
+    background: #0f0f0f;
     color: #fff;
+    padding: 18px;
+    font-size: 0.9rem;
 }
