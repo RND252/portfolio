@@ -50,7 +50,7 @@
   <div class="container">
     <h2>Mes Compétences</h2>
 
-    <!-- Boutons principaux -->
+    <!-- Boutons des compétences -->
     <div class="skills-buttons">
       <button class="skill-btn" data-skill="reseaux">Réseaux</button>
       <button class="skill-btn" data-skill="developpement">Développement</button>
@@ -58,23 +58,24 @@
       <button class="skill-btn" data-skill="securite">Sécurité informatique</button>
     </div>
 
-    <!-- Détails complets des compétences -->
+    <!-- Blocs détaillés (accordéons) -->
     <div class="skills-details">
 
       <!-- Réseaux -->
       <div id="reseaux" class="skill-detail">
+        <button class="close-btn">X</button>
         <h3>Réseaux</h3>
         <h4>Routeurs</h4>
         <ul>
-          <li>OSPF, BGP, IPv4, IPv6, MPLS, HSRP, SPT</li>
+          <li>OSPF, BGP, IPv4/IPv6, MPLS, HSRP</li>
         </ul>
-        <h4>Switches lvl 2/3</h4>
+        <h4>Switches</h4>
         <ul>
           <li>VLAN, HSRP, Routage Inter-VLAN, VTP</li>
         </ul>
         <h4>Virtualisation</h4>
         <ul>
-          <li>Proxmox, VMware ESXi, VirtualBox, Hyper-V</li>
+          <li>Proxmox, VMware ESXi, Hyper-V, VirtualBox</li>
         </ul>
         <h4>Supervision</h4>
         <ul>
@@ -84,33 +85,36 @@
 
       <!-- Développement -->
       <div id="developpement" class="skill-detail">
+        <button class="close-btn">X</button>
         <h3>Développement</h3>
         <ul>
-          <li>HTML, CSS, JavaScript, PHP : création de sites web statiques et dynamiques</li>
-          <li>Java : application basique de chat</li>
-          <li>C++ : programmation de robot Arduino, scripts type Rubber Ducky</li>
+          <li>HTML, CSS, JavaScript : sites statiques et dynamiques</li>
+          <li>Java : mini applications (chat)</li>
+          <li>C++ : robot Arduino, scripts Rubber Ducky</li>
           <li>Windev : logiciel de gestion de stock</li>
-          <li>WordPress : création de site vitrine</li>
-          <li>PowerShell/Shell : scripts pour administration système</li>
+          <li>WordPress : sites vitrines</li>
+          <li>PowerShell/Shell : scripts pour administration</li>
         </ul>
       </div>
 
       <!-- Téléphonie IP -->
       <div id="telephonie" class="skill-detail">
+        <button class="close-btn">X</button>
         <h3>Téléphonie IP</h3>
         <ul>
-          <li>Serveur PBX : Asterisk, 3CX</li>
-          <li>Client VoIP : Linphone</li>
+          <li>Serveurs PBX : Asterisk, 3CX</li>
+          <li>Clients VoIP : Linphone</li>
           <li>Réseaux cellulaires : 1G, GSM, UMTS, 4G LTE, 5G, fibre/cuivre</li>
         </ul>
       </div>
 
       <!-- Sécurité informatique -->
       <div id="securite" class="skill-detail">
+        <button class="close-btn">X</button>
         <h3>Sécurité informatique</h3>
         <ul>
-          <li>Red Teaming : plateformes CTF (RootMe, TryHackMe, HackTheBox), hackathons SecuRT</li>
-          <li>Blue Teaming : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
+          <li>Red Team : CTF, HackTheBox, TryHackMe, hackathons SecuRT</li>
+          <li>Blue Team : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
           <li>IDS/IPS : Suricata, Snort, Zeek</li>
           <li>SIEM : Graylog</li>
           <li>Firewalls : pfSense, iptables, Stormshield</li>
@@ -120,6 +124,7 @@
     </div>
   </div>
 </section>
+
 
 
 <!-- PROJETS -->
