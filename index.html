@@ -47,18 +47,80 @@
 
 <!-- COMPÉTENCES -->
 <section id="skills" class="section reveal">
-    <div class="container">
-        <h2>Compétences</h2>
-        <div class="skills-list">
-            <div class="skill"><span>Réseaux</span></div>
-            <div class="skill"><span>Cybersécurité</span></div>
-            <div class="skill"><span>HTML & CSS</span></div>
-            <div class="skill"><span>JavaScript</span></div>
-            <div class="skill"><span>Linux</span></div>
-            <div class="skill"><span>Windows Server</span></div>
-        </div>
+  <div class="container">
+    <h2>Mes Compétences</h2>
+
+    <!-- Boutons principaux -->
+    <div class="skills-buttons">
+      <button class="skill-btn" data-skill="reseaux">Réseaux</button>
+      <button class="skill-btn" data-skill="developpement">Développement</button>
+      <button class="skill-btn" data-skill="telephonie">Téléphonie IP</button>
+      <button class="skill-btn" data-skill="securite">Sécurité informatique</button>
     </div>
+
+    <!-- Détails complets des compétences -->
+    <div class="skills-details">
+
+      <!-- Réseaux -->
+      <div id="reseaux" class="skill-detail">
+        <h3>Réseaux</h3>
+        <h4>Routeurs</h4>
+        <ul>
+          <li>OSPF, BGP, IPv4, IPv6, MPLS, HSRP, SPT</li>
+        </ul>
+        <h4>Switches lvl 2/3</h4>
+        <ul>
+          <li>VLAN, HSRP, Routage Inter-VLAN, VTP</li>
+        </ul>
+        <h4>Virtualisation</h4>
+        <ul>
+          <li>Proxmox, VMware ESXi, VirtualBox, Hyper-V</li>
+        </ul>
+        <h4>Supervision</h4>
+        <ul>
+          <li>Nagios</li>
+        </ul>
+      </div>
+
+      <!-- Développement -->
+      <div id="developpement" class="skill-detail">
+        <h3>Développement</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript, PHP : création de sites web statiques et dynamiques</li>
+          <li>Java : application basique de chat</li>
+          <li>C++ : programmation de robot Arduino, scripts type Rubber Ducky</li>
+          <li>Windev : logiciel de gestion de stock</li>
+          <li>WordPress : création de site vitrine</li>
+          <li>PowerShell/Shell : scripts pour administration système</li>
+        </ul>
+      </div>
+
+      <!-- Téléphonie IP -->
+      <div id="telephonie" class="skill-detail">
+        <h3>Téléphonie IP</h3>
+        <ul>
+          <li>Serveur PBX : Asterisk, 3CX</li>
+          <li>Client VoIP : Linphone</li>
+          <li>Réseaux cellulaires : 1G, GSM, UMTS, 4G LTE, 5G, fibre/cuivre</li>
+        </ul>
+      </div>
+
+      <!-- Sécurité informatique -->
+      <div id="securite" class="skill-detail">
+        <h3>Sécurité informatique</h3>
+        <ul>
+          <li>Red Teaming : plateformes CTF (RootMe, TryHackMe, HackTheBox), hackathons SecuRT</li>
+          <li>Blue Teaming : audit sécurité, normes ISO/IEC 27001, RGPD, EBIOS, APSAD D32/R82</li>
+          <li>IDS/IPS : Suricata, Snort, Zeek</li>
+          <li>SIEM : Graylog</li>
+          <li>Firewalls : pfSense, iptables, Stormshield</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
 </section>
+
 
 <!-- PROJETS -->
 <section id="projects" class="section reveal">
