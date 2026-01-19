@@ -125,11 +125,50 @@
       <div class="projects-details">
 
         <div id="proj1" class="project-detail">
-          <button class="close-btn">X</button>
-          <h3>Projet 1</h3>
-          <p>Description détaillée du projet 1.</p>
-          <a href="#" target="_blank">Voir le projet</a>
-        </div>
+  <button class="close-btn">X</button>
+  <h3>Projet 1 : Mener un projet professionnel</h3>
+  <p>
+    J’ai mené un projet professionnel qui consiste à piloter un projet informatique, c’est-à-dire de faire toute l’infrastructure réseau d’un hôpital de campagne, ce qui m’a permis de mettre en évidence mes compétences en cybersécurité. 
+    Pour cela, j’avais 3 jours et j’étais en groupe avec Ilyas, Gabin et Jasim. Avant de commencer ces trois jours de projet, nous avions préparé quelques semaines avant :
+  </p>
+  <ul>
+    <li>Une cartographie de l’infrastructure réseau de l’hôpital pour savoir le hardware nécessaire (processeur, carte mère, etc.) et le software (systèmes d’exploitation Windows/Linux, applications, etc.)</li>
+    <li>Un cahier des charges pour définir qui fait quoi durant le projet et éviter les pertes de temps</li>
+  </ul>
+  <p>
+    J’ai configuré des PCs, routeurs et switchs pour que les machines fonctionnent correctement, en utilisant les compétences vues en cours : administrer les réseaux et l’internet, connecter les entreprises et les usagers, créer des outils et applications informatiques pour les R&T. Cela inclut la configuration du DHCP, VLAN, etc.
+  </p>
+
+  <p>
+    Durant le projet, j’ai rencontré des problèmes de configuration qui ont causé des retards. Par exemple, un PC virtuel sur Proxmox et un PC physique ne communiquaient pas entre eux. (Voir figure 2)
+    Pour résoudre cela, j’ai vérifié tous les branchements des PCs au switch et routeur, ainsi que les configurations. La vraie solution était une mauvaise route par défaut du PC Proxmox, qui redirigeait les paquets vers Internet au lieu des PCs. (Voir figure 3)
+  </p>
+
+  <p>
+    Grâce à ce projet, j’ai pu développer et mettre en évidence mes compétences techniques liées à l’apprentissage : administrer les réseaux et l’internet, connecter les entreprises et les usagers.
+  </p>
+
+  <!-- Figures -->
+  <div class="project-figures">
+    <figure>
+      <img src="images/figure1.png" alt="Cartographie de l’infrastructure réseaux">
+      <figcaption>Figure 1 : Cartographie de l’infrastructure réseaux</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/figure2.png" alt="Ping montrant la non-communication des PCs">
+      <figcaption>Figure 2 : Ping montrant la non-communication des PCs</figcaption>
+    </figure>
+
+    <figure>
+      <img src="images/figure3.png" alt="Configuration du routeur">
+      <figcaption>Figure 3 : Une partie de la configuration du routeur</figcaption>
+    </figure>
+  </div>
+  
+  <a href="#" target="_blank">Voir le projet complet</a>
+</div>
+
 
         <div id="proj2" class="project-detail">
           <button class="close-btn">X</button>
