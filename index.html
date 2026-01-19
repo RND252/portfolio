@@ -3,61 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eren Dogan | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio | Nom Prénom</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+    <!-- NAV -->
     <nav>
+        <div class="logo">Nom Prénom</div>
         <ul>
-            <li><a href="#accueil">Accueil</a></li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header id="accueil">
-        <h1>Eren Dogan</h1>
-        <p>Étudiant passionné en réseaux & technologies</p>
-        <p>Je m'appelle <strong>Eren Dogan</strong></p>
-    </header>
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <h1 class="fade">Nom Prénom</h1>
+        <p class="fade delay-1">Développeur • Réseaux • Technologie</p>
+        <a href="#contact" class="btn fade delay-2">Me contacter</a>
+    </section>
 
-    <section id="apropos">
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
         <h2>À propos</h2>
         <p>
-            Étudiant en 3ᵉ année de BTS Réseaux & Télécommunications, spécialisé dans la cybersécurité
-            et passionné par tout ce qui touche à l’informatique et aux systèmes réseaux.
+            Présente-toi ici.  
+            Parle de ton parcours, de tes passions et de tes objectifs.
         </p>
     </section>
 
-    <section id="competences">
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
         <h2>Compétences</h2>
-        <ul>
-            <li>Administration Linux & Windows Server</li>
-            <li>Sécurité informatique</li>
-            <li>Virtualisation & Cloud</li>
-            <li>Développement Web (HTML, CSS, JS)</li>
-        </ul>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Réseaux</span>
+            <span>Cybersécurité</span>
+        </div>
     </section>
 
-    <section id="projets">
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
         <h2>Projets</h2>
-        <ul>
-            <li>Création d’un réseau sécurisé d’entreprise</li>
-            <li>Développement d’une app Web interactive</li>
-            <li>Participation à des CTF & challenges cybersécurité</li>
-        </ul>
+        <div class="projects">
+            <div class="card">
+                <h3>Projet 1</h3>
+                <p>Description du projet</p>
+            </div>
+            <div class="card">
+                <h3>Projet 2</h3>
+                <p>Description du projet</p>
+            </div>
+            <div class="card">
+                <h3>Projet 3</h3>
+                <p>Description du projet</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
+    <!-- CONTACT -->
+    <section id="contact" class="reveal">
         <h2>Contact</h2>
-        <p>Email : <a href="mailto:eren.dogan@example.com">eren.dogan@example.com</a></p>
+        <p>Email : ton.email@example.com</p>
+        <p>LinkedIn • GitHub</p>
     </section>
 
     <footer>
-        <p>© 2026 Eren Dogan. Tous droits réservés.</p>
+        <p>© 2026 – Portfolio personnel</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
