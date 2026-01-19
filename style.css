@@ -5,71 +5,76 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     color: #222;
-    padding-top: 70px; /* pour nav fixe */
+    background: #fefefe;
+    scroll-behavior: smooth;
+    padding-top: 70px;
 }
 
-/* NAVIGATION CENTRÉE */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #000;
+    background: #111;
     z-index: 1000;
 }
 
 .nav-menu {
     list-style: none;
-    justify-content: center;
     display: flex;
+    justify-content: center;
     gap: 35px;
     padding: 18px 0;
 }
 
 .nav-menu a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: 600;
     transition: 0.3s;
 }
+
 .nav-menu a:hover {
     color: #00aaff;
 }
 
-/* SECTION ACCUEIL */
+/* HERO */
 .hero {
-    background: url('background.jpg') center/cover no-repeat;
     text-align: center;
     padding: 120px 20px;
+    background: linear-gradient(135deg, #00aaff, #004f99);
+    color: white;
 }
 
-.hero-container {
+.hero .container {
     max-width: 700px;
     margin: auto;
-    text-align: center;
 }
 
 .hero h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .subtitle {
     font-size: 1.5rem;
-    color: #555;
+    color: #e0e0e0;
+    margin-bottom: 10px;
 }
 
 .description {
-    margin-top: 12px;
-    margin-bottom: 25px;
     font-size: 1rem;
-    color: #333;
+    color: #ddd;
+    margin-bottom: 25px;
 }
 
+/* BOUTONS */
 .hero-buttons .btn {
-    padding: 12px 30px;
-    margin: 0 8px;
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 28px;
     border-radius: 25px;
     font-weight: bold;
     text-decoration: none;
@@ -82,8 +87,13 @@ body {
 }
 
 .btn.secondary {
-    border: 2px solid #00aaff;
-    color: #00aaff;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn.cv {
+    background: white;
+    color: #004f99;
 }
 
 .btn:hover {
@@ -92,9 +102,10 @@ body {
 
 /* SECTIONS */
 .section {
-    padding: 80px 20px;
+    padding: 90px 20px;
 }
-.section-container {
+
+.section .container {
     max-width: 700px;
     margin: auto;
     text-align: center;
@@ -102,11 +113,10 @@ body {
 
 .section h2 {
     color: #00aaff;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    margin-bottom: 25px;
 }
 
-/* COMPÉTENCES */
+/* SKILLS */
 .skills-list {
     display: flex;
     justify-content: center;
@@ -114,34 +124,34 @@ body {
     gap: 15px;
 }
 
-.skills-list span {
+.skills-list .skill span {
     background: #e6f4ff;
     padding: 10px 16px;
     border-radius: 22px;
 }
 
 /* PROJETS */
-.project-cards {
+.projects {
     display: grid;
-    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .card {
     background: #f4f4f4;
-    padding: 20px;
+    padding: 22px;
     border-radius: 12px;
+    text-align: center;
 }
 
 /* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-    background: #000;
+    background: #111;
     color: white;
 }
 
-/* SCROLL ANIMATION */
+/* ANIMATION AU SCROLL */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
