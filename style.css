@@ -1,11 +1,11 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
+/* ================= BODY ================= */
 body {
     font-family: 'Arial', sans-serif;
     color: #222;
@@ -14,7 +14,7 @@ body {
     padding-top: 70px; /* Pour navbar fixe */
 }
 
-/* NAVBAR CENTRÉE */
+/* ================= NAVBAR ================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -42,7 +42,7 @@ body {
     color: #00aaff;
 }
 
-/* HERO / ACCUEIL */
+/* ================= HERO / ACCUEIL ================= */
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -72,7 +72,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* BOUTONS */
+/* ================= BOUTONS ================= */
 .hero-buttons .btn {
     display: inline-block;
     margin: 8px;
@@ -100,9 +100,10 @@ body {
 
 .btn:hover {
     opacity: 0.8;
+    transform: translateY(-2px);
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section {
     padding: 90px 20px;
 }
@@ -118,13 +119,12 @@ body {
     margin-bottom: 25px;
 }
 
-/* À PROPOS */
 .section p {
     line-height: 1.7;
     color: #444;
 }
 
-/* COMPÉTENCES */
+/* ================= COMPÉTENCES ACCORDÉON ================= */
 .skills-buttons {
     display: flex;
     justify-content: center;
@@ -153,6 +153,7 @@ body {
     max-width: 700px;
     margin: auto;
     text-align: left;
+    position: relative;
 }
 
 .skill-detail {
@@ -161,6 +162,7 @@ body {
     padding: 20px;
     border-radius: 12px;
     margin-top: 15px;
+    position: relative;
 }
 
 .skill-detail h3 {
@@ -173,10 +175,30 @@ body {
     color: #004f99;
 }
 
-/* PROJETS */
+/* Bouton fermer X */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.close-btn:hover {
+    background: #ff1a1a;
+}
+
+/* ================= PROJETS ================= */
 .projects {
     display: grid;
     gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .card {
@@ -192,7 +214,37 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* FOOTER */
+/* ================= CONTACT ================= */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact input, .contact textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #00aaff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    opacity: 0.9;
+}
+
+/* ================= FOOTER ================= */
 footer {
     text-align: center;
     padding: 20px;
@@ -200,7 +252,7 @@ footer {
     color: white;
 }
 
-/* ANIMATION AU SCROLL */
+/* ================= ANIMATION AU SCROLL ================= */
 .reveal {
     opacity: 0;
     transform: translateY(40px);
