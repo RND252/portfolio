@@ -311,6 +311,22 @@ body {
 .contact button:hover {
     opacity: 0.9;
 }
+.mail-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00aaff, #004f99);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.mail-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
 
 /* ================= FOOTER ================= */
 footer {
